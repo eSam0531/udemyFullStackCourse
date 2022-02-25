@@ -1,12 +1,9 @@
-class Customer {
-    
-    
-
+export class Customer {
+    //constructor
     constructor(private _firstName: string,private _lastName: string){
-        this._firstName = _firstName;
-        this._lastName = _lastName;
     }
 
+    //accessors: set/get
     public get firstName() : string {
         return this._firstName;
     }
@@ -24,9 +21,3 @@ class Customer {
     }
 
 }
-
-//let's create an instance
-let myCustomer = new Customer("Esmee","Samarripa");
-
-console.log(myCustomer.firstName);
-console.log(myCustomer.lastName);

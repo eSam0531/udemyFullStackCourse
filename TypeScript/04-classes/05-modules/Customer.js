@@ -1,12 +1,14 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Customer = void 0;
 var Customer = /** @class */ (function () {
+    //constructor
     function Customer(_firstName, _lastName) {
-        this._firstName = _firstName;
-        this._lastName = _lastName;
         this._firstName = _firstName;
         this._lastName = _lastName;
     }
     Object.defineProperty(Customer.prototype, "firstName", {
+        //accessors: set/get
         get: function () {
             return this._firstName;
         },
@@ -28,7 +30,4 @@ var Customer = /** @class */ (function () {
     });
     return Customer;
 }());
-//let's create an instance
-var myCustomer = new Customer("Esmee", "Samarripa");
-console.log(myCustomer.firstName);
-console.log(myCustomer.lastName);
+exports.Customer = Customer;
